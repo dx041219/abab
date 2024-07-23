@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News Management</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/editNews.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- <div  id="navBar"	>
+		<nav>
+			<input type="checkbox" id="hamburger">
+			<label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+			<label for="logo"><a href="index.html"><img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="" class="teamLogo"></a></label>
+			<ul>
+				<li><a href="#" class="navBtn active">Home</a></li>
+				<li><a href="#" class="navBtn ">Injury Report</a></li>
+				<li><a href="about.html" class="navBtn ">About</a></li>
+				<li><a href="#" class="navBtn ">Services</a></li>
+				<li><a href="contact.html" class="navBtn ">Contact Us</a></li>
+				<li><a href="#" class="navBtn ">Feedback</a></li>
+			</ul>
+		</nav>
+	</div> -->
+	<div class="sidebar">
+		<input type="checkbox" id="hamburger">
+		<label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+		<div class="side">
+			<div class="profile">
+				<!-- <img src="../asset/admin.png" alt="" class="profilePic"> -->
+				<div class="profileName">Admin</div>
+			</div>
+			<ul>
+				<li><a href="dashboard.html" class="sideBtn ">Dashboard</a></li>
+				<li><a href="scheduleMgmt.html" class="sideBtn ">Schedule Management</a></li>
+				<li><a href="editPOTM.html" class="sideBtn ">POTM</a></li>
+				<li><a href="editNews.html" class="sideBtn ">News Management</a></li>
+				<!-- <li><a href="#" class="sideBtn ">Fan Management</a></li> -->
+				<!-- <li><a href="#" class="sideBtn ">Feedback Management</a></li> -->
+			</ul>
+		</div>
+		<div class="logout">
+			<a href="../html/adminLogin.html" class="sideBtn logout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+		</div>
+	</div>
+	<div class="body">
+		<div class="newsContainer">
+			<div class="contentArea">
+				<h1 class="hanken-900">Add News</h1>
+				<label for="title" class="font-26 hanken-900">Title</label><input type="text" name="title" id="title">
+				<label for="content" class="font-26 hanken-900">Content</label><textarea name="content" id="content" cols="30" rows="10"></textarea>
+				<label for="image" class="font-26 hanken-900">Image</label><input type="file" name="image" id="image">
+				<button type="submit"><a href="dashboard.html">Submit</a></button>
+			</div>
+			<div class="newsArea">
+				<div class="newsTitle">
+					<div class="newsTitleTxt hanken-900 font-26">Latest News</div>
+					<div class="newsTitleDate hanken-600">Jan 11, 2024</div>
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="lebron_grant.html">LeBron James sent signed jersey to Mavericks' Grat Williams after scuffle</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="injury.html">Lakers Injury Report: LeBron James Questionable, Cam Reddish Out Against Thunder</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="adlossutah.html">Antony Davis Takes Responsibility For Lakers Loss Against Jazz</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="dangelo.html">News: D’Angelo Russell Was ‘Just Hooping’ In 39-Point Performance Against Jazz</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="DM.html">Dejounte Murray Trade Rumors: Lakers Have Shown ‘No Interest’ In Trading Austin Reaves To Hawks</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

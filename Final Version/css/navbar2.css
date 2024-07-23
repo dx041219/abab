@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hamburgerBtn{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#hamburger{
+	display: none;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+header{
+    background-color: #492323;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index:1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:33px 9%;
+    height: 105px;
+    font-family: "Poppins", sans-serif;
+    /* background:transparent; */
+
+}
+
+.navlist{
+    display: flex;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    color: gold;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 3px;
+    object-fit: cover;
+}
+
+.login-text {
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown {
+    font-family: "Poppins", sans-serif;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: translate(-95px,-40px);
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-style: italic;
+}
+
+.dropdown-item:hover{
+    text-decoration: underline;
+}
+
+.profile-button:hover .dropdown {
+    display: block;
+}
+
+.communityContainer:hover .dropdown {
+    z-index: 1;
+    right: 3%;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    display: block;
+}
+.matchContainer:hover .dropdown {
+    z-index: 1;
+    /* position: static; */
+    right: 32%;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.hero{
+    background-image: linear-gradient(45deg, #262626, #000000);
+    height: 735px;
+    /* background-position: center; Center the image */
+    /* background-size: 1525px 750px; */
+    /* overflow: hidden; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container{
+    background-image: url(/assets/kobe_bryan/Kobe\ Bryant\ Dunk.jpg);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    ;
+}
+
+.nba{
+    overflow:hidden;
+}
+
+.nba img{
+    margin-top:100px;
+    margin-left:200px;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nba h1{
+    transform: translate(-56px,125px);
+    font-weight: bold;
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.hero-content{
+    /* flex: 1; */
+    width: 70%;
+    margin:auto ;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content h2{ 
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #b8975b;;
+    display: inline-block;
+    margin-left: 43px;
+}
+
+.hero-content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #b8975b;
+    margin-left: 43px;
+    margin-right:65px;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 120px;
+}
+   
+.flex-item {
+    text-align: center;
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.body{
+    margin-top: 105px;
+}
+
+@media screen and (max-width: 1100px){
+    .hamburgerBtn{
+		display: block;
+	}
+    ul{
+		z-index: 1;
+		position: fixed;
+        flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		background: #492323;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	.navList ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	.navBtn{
+		font-size: 20px;
+	}
+	.navBtn:hover,.navBtn.active{
+		background: none;
+		color: #0082e6;
+	}
+	#hamburger:checked ~ ul{
+		left: 0;
+	}
+    
+}

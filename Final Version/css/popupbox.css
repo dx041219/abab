@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    /* width: 50%; */
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.confirmPopup {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.popup button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}
+
+.statCard{
+    border: 1px solid black;
+    /* width: 40%; */
+    margin: 10px;
+}
+.card1{
+    grid: card1;
+}
+.card2{
+    grid: card2;
+}
+.card3{
+    grid: card3;
+}

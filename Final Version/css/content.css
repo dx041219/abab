@@ -1,0 +1,297 @@
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #393E46;
+        }
+
+        .header 
+        {
+            color: #929AAB;
+            text-align: center;
+            /* padding: 20px; */
+            font-family: "STXingkai";
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        section 
+        {
+            margin: 20px;
+        }
+
+        article 
+        {
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr); 
+            gap: 20px; 
+        }
+        h3
+        {
+            font-size: 30px;
+            color: #EEEEEE;
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        .title h1
+        {
+            color: #EEEEEE;
+            font-size: 50px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h2 
+        {
+            color: #EEEEEE;
+            font-size:50px;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-family: rockwell;
+        }
+
+        p 
+        {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-right: 50%;
+            color: #929AAB;
+        }
+
+        .content img 
+        {
+            max-width: 70%;
+            height: auto;
+            border-radius: 10px;
+            transition: 0.3s ease;
+            justify-self: end;
+            grid-area: 1 / 2 / 3 / 3;
+        }
+
+        .content img:hover
+        {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+
+        .content
+        {
+            margin: 0 10%;
+            margin-top: 10%;
+        }
+
+        .extension p
+        {
+            font-family: 'Lucida Console';
+            color: #929AAB;
+            font-size: 22px;
+
+        }
+
+        .extension h1
+        {
+            color: #EEEEEE;
+            font-family: Rockwell;
+        }
+
+        .extension img
+        {
+            width: 40%;
+            height: auto;
+        }
+
+        article a
+        {
+            color: #929AAB;
+            font-family: Lucida Console;
+            text-decoration: none;
+        }
+
+        article a:hover
+        {
+            color:#F7F7F7;
+
+        }
+
+        article a:hover h3
+        {
+            font-size: 25px;
+            text-shadow: #F7F7F7;
+        }
+
+        .box .icons
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 8px;
+            padding: 0 8px;
+            cursor: pointer;
+            background: #393E46;
+            border: 2px solid #929AAB;
+            border-radius: 50px;
+            transition: 0.2s ease;
+        }
+        .box .icons:hover {
+         border: 2px solid #F7F7F7;
+        }
+        .icons .like
+        {
+            width: 35px;
+            border-right: 2px solid #929AAB;
+            padding: 0 10px 0 8px;
+            pointer-events: none;
+        }
+
+        .icons .dislike
+        {
+            width: 35px;
+            border-right: 2px solid #929AAB;
+            padding: 0 8px 0 10px;
+            pointer-events: none;
+        }
+
+        .box .icons i
+        {
+            width: 20px;
+            box-sizing: content-box;
+            padding: 10px;
+            transition: 0.2s ease;
+            color: #929AAB;
+            transform: scale(1);
+        }
+
+        .box .icons i:active
+        {
+            transform: scale(1.3);
+        }
+
+        .box 
+        {
+            width: 300px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            cursor: default;
+            color: #929AAB;
+            font-weight: 600;
+            border-radius: 10px;
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .boxs .icons
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 8px;
+            padding: 0 8px;
+            cursor: pointer;
+            background: #393E46;
+            border: 2px solid #929AAB;
+            border-radius: 50px;
+            transition: 0.2s ease;
+        }
+
+        .boxs 
+        {
+            display: flex;
+            width: 300px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            cursor: default;
+            color: #929AAB;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
+        .boxs .icons i
+        {
+            width: 20px;
+            box-sizing: content-box;
+            padding: 10px;
+            transition: 0.2s ease;
+            color: #929AAB;
+            transform: scale(1);
+        }
+
+        .boxs .icons i:active
+        {
+            transform: scale(1.3);
+        }
+
+        #header-container {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            overflow: hidden;
+        }
+        
+        #header-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1500px;
+            object-fit: cover;
+            transition: opacity 2s ease, transform 2s ease; 
+            opacity: 0;
+            transform: scale(1); 
+        }
+        
+        #header-container img.zoom-in {
+            transform: scale(1.1); 
+        }
+        
+        #header-container img:first-child {
+            opacity: 1;
+        }
+        
+        #header-container img {
+            filter: brightness(60%); 
+        }
+        
+        #header-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #EEEEEE;
+            font-size: 100px;
+            font-weight: 900;
+            font-family:fantasy;
+            padding-left: 10px;
+            letter-spacing: 1.5px;
+        }
+
+        .shooting-star {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #929AAB;
+            opacity: 0;
+            animation: shooting-star-animation linear infinite;
+        }
+
+        @keyframes shooting-star-animation {
+            0% {
+                opacity: 0;
+                transform: translate(0, 0) scale(1);
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-300vw, 300vh) scale(0);
+            }
+        }

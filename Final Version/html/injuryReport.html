@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/injuryReport.css">
+	<script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+	<!---customize css link-->
+    <link rel="stylesheet" type="text/css" href="../css/navbar2.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+        <a href="index.html" class="logo">LAKERS</a>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stats.html">Player Stats</a></li>
+            <li><a href="injuryReport.html">Injury Report</a></li>
+            <div class="matchContainer">
+                <li><a href="content.html">Matches & News</a></li>
+                <div class="dropdown">
+                    <a href="schedule.html" class="dropdown-item">Schedule</a>
+                    <a href="content.html" class="dropdown-item">News</a>
+                </div>
+            </div>
+            <li><a href="player_of_month.html">MVP</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <div class="communityContainer">
+                <li><a href="#" id="community">Community</a></li>
+                <div class="dropdown">
+                    <a href="introteam.html" class="dropdown-item">Team History</a>
+                    <a href="introduction.html" class="dropdown-item">Sports Introduction</a>
+                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+					<a href="team.html" class="dropdown-item">DevTeam</a>
+                </div>
+            </div>
+            <!-- <li><a href="#">JuniorLakers</a></li> -->
+        </ul>
+        
+        <div class="profile-button">
+            <img class="profile-picture" src="../asset/profilePic.jpg" alt="Profile Picture">
+            <div class="login-text">Log In</div>
+            <div class="dropdown">
+                <a href="fansLogin.html" class="dropdown-item">User Login</a>
+                <a href="adminLogin.html" class="dropdown-item">Admin Login</a>
+                <a href="index.html" class="dropdown-item">Logout</a>
+            </div>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+	<div class="body">
+		<h1 style="text-align: center;">Injury Report</h1>
+		<div class="caption">
+			Check in throughout the regular season to find injury updates on the Los Angeles Lakers players.
+		</div>
+		<section class="injurySec">
+			<div class="injuryContainer">
+				<div class="card">
+					<div class="cardTitle hanken-900">Anthony Davis</div>
+					<img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2023/10/2324_InjuryPage_headshot_Davis_1000x700.png?imwidth=1000&imheight=700" alt="" class="playerImage">
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Injury</div>
+					<div class="cardDetails hanken-600">Left Ankle Sprain/Bone Bruise</div>
+					<div class="cardDetails hanken-600">Latest Update: 1/16/24</div>
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Status</div>
+					<div class="cardDetails hanken-600"><strong class="upper hanken-900">Probable </strong>for 1/17/24</div>
+				</div>
+			</div>
+			<div class="spacer-50"></div>
+			<div class="injuryContainer">
+				<div class="card">
+					<div class="cardTitle hanken-900">Lebron James</div>
+					<img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2023/10/2324_InjuryPage_headshot_James_1000x700.png?imwidth=1000&imheight=700" alt="" class="playerImage">
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Injury</div>
+					<div class="cardDetails hanken-600">Left Ankle Peroneal Tendinopathy</div>
+					<div class="cardDetails hanken-600">Latest Update: 1/16/24</div>
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Status</div>
+					<div class="cardDetails hanken-600"><strong class="upper hanken-900">Questionable </strong>for 1/17/24</div>
+				</div>
+			</div>
+			<div class="spacer-50"></div>
+			<div class="injuryContainer">
+				<div class="card">
+					<div class="cardTitle hanken-900">Cam Reddish</div>
+					<img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2023/10/2324_InjuryPage_headshot_Reddish_1000x700.png?imwidth=1000&imheight=700" alt="" class="playerImage">
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Injury</div>
+					<div class="cardDetails hanken-600">Left Knee Effusion</div>
+					<div class="cardDetails hanken-600">Latest Update: 1/16/24</div>
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Status</div>
+					<div class="cardDetails hanken-600"><strong class="upper hanken-900">out </strong>for 1/17/24</div>
+				</div>
+			</div>
+			<div class="spacer-50"></div>
+			<div class="injuryContainer">
+				<div class="card">
+					<div class="cardTitle hanken-900">Gabe Vincent</div>
+					<img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2023/10/2324_InjuryPage_headshot_Vincent_1000x700.png.png?imwidth=1000&imheight=700" alt="" class="playerImage">
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Injury</div>
+					<div class="cardDetails hanken-600">Left Knee Surgery</div>
+					<div class="cardDetails hanken-600">Latest Update: 12/31/23</div>
+				</div>
+				<div class="card">
+					<div class="cardTitle hanken-900">Status</div>
+					<div class="cardDetails hanken-600"><strong class="upper hanken-900">out </strong></div>
+				</div>
+			</div>
+			<div class="spacer-50"></div>
+		</section>
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

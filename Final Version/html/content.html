@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel = "stylesheet" href = "../css/content.css">
+        <title>News Center</title>
+        <!---customize css link-->
+    <link rel="stylesheet" type="text/css" href="../css/navbar2.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+        <script src="../js/news.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">LAKERS</a>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+    
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stats.html">Player Stats</a></li>
+                <li><a href="injuryReport.html">Injury Report</a></li>
+                <div class="matchContainer">
+                    <li><a href="content.html">Matches & News</a></li>
+                    <div class="dropdown">
+                        <a href="schedule.html" class="dropdown-item">Schedule</a>
+                        <a href="content.html" class="dropdown-item">News</a>
+                    </div>
+                </div>
+                <li><a href="player_of_month.html">MVP</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <div class="communityContainer">
+                    <li><a href="#" id="community">Community</a></li>
+                    <div class="dropdown">
+                        <a href="introteam.html" class="dropdown-item">Team History</a>
+                        <a href="introduction.html" class="dropdown-item">Sports Introduction</a>
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                        <a href="team.html" class="dropdown-item">DevTeam</a>
+                    </div>
+                </div>
+                <!-- <li><a href="#">JuniorLakers</a></li> -->
+            </ul>
+            
+            <div class="profile-button">
+                <img class="profile-picture" src="../asset/profilePic.jpg" alt="Profile Picture">
+                <div class="login-text">Log In</div>
+                <div class="dropdown">
+                    <a href="fansLogin.html" class="dropdown-item">User Login</a>
+                    <a href="adminLogin.html" class="dropdown-item">Admin Login</a>
+                    <a href="index.html" class="dropdown-item">Logout</a>
+                </div>
+            </div>
+    
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+
+        <div class="body">
+            <div class="header">
+                <div id="header-container">
+                    <img src="../asset/addunk.jpg" alt="header 1">
+                    <img src="../asset/lebrondunk.jpg" alt="header 2">
+                    <img src="../asset/austin.jpg" alt="header 3">
+                </div>
+                <div id="header-text">News and Media</div>
+
+                <b><hr></b>
+            </div>
+            
+            <div class= "content">
+            <section id="latest-news">
+                
+                <h2>Latest News</h2>
+
+
+                <article>
+                    <h3><a href="../html/lebron_grant.html">News: LeBron James Sent Signed Jersey To Mavericks’ Grant Williams After Scuffle</a></h3>
+                    <a href="../html/lebron_grant.html"><img src="../asset/lbj_grant.jpg" alt="LeBron and Grant"></a>
+                    <div class="box">
+                        <div class="icons">
+                            <span class="like" id="likeCount_1">0</span>
+                            <i class="fa-regular fa-thumbs-up" id="likeBtn_1" onclick = "toggleLike(1)"></i>
+                        </div>
+                        <div class="icons">
+                            <span disclass="dislike" id="dislikeCount_1">0</span>
+                            <i class="fa-regular fa-thumbs-down" id="dislikeBtn_1" onclick = "toggleDislike(1)"></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article>
+                    <h3><a href="../html/injury.html">Lakers Injury Report: LeBron James Questionable, Cam Reddish Out Against Thunder</a></h3>
+                    <a href="../html/injury.html"><img src="../asset/injured.jpg" alt="Injury Image"></a>
+                    <div class="box">
+                        <div class="icons">
+                            <span class="like" id="likeCount_2">0</span>
+                            <i class="fa-regular fa-thumbs-up" id="likeBtn_2" onclick = "toggleLike(2)"></i>
+                        </div>
+                        <div class="icons">
+                            <span disclass="dislike" id="dislikeCount_2">0</span>
+                            <i class="fa-regular fa-thumbs-down" id="dislikeBtn_2" onclick = "toggleDislike(2)"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3><a href="../html/adlossutah.html">Antony Davis Takes Responsibility For Lakers Loss Against Jazz</a></h3>
+                    <a href="../html/adlossutah.html"><img src="../asset/adloss.jpg" alt="AD Loss Utah Image"></a>
+                    <div class="box">
+                        <div class="icons">
+                            <span class="like" id="likeCount_3">0</span>
+                            <i class="fa-regular fa-thumbs-up" id="likeBtn_3" onclick = "toggleLike(3)"></i>
+                        </div>
+                        <div class="icons">
+                            <span disclass="dislike" id="dislikeCount_3">0</span>
+                            <i class="fa-regular fa-thumbs-down" id="dislikeBtn_3" onclick = "toggleDislike(3)"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3><a href="../html/dangelo.html">News: D’Angelo Russell Was ‘Just Hooping’ In 39-Point Performance Against Jazz</a></h3>
+                    <a href="../html/dangelo.html"><img src="../asset/dangeloper.jpg" alt="D'Angelo Russell Image"></a>
+                    <div class="box">
+                        <div class="icons">
+                            <span class="like" id="likeCount_4">0</span>
+                            <i class="fa-regular fa-thumbs-up" id="likeBtn_4" onclick = "toggleLike(4)"></i>
+                        </div>
+                        <div class="icons">
+                            <span disclass="dislike" id="dislikeCount_4">0</span>
+                            <i class="fa-regular fa-thumbs-down" id="dislikeBtn_4" onclick = "toggleDislike(4)"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <hr>
+            
+                <h2>Trade Rumors</h2>
+                <article>
+                    <h3><a href="../html/DM.html">Dejounte Murray Trade Rumors: Lakers Have Shown ‘No Interest’ In Trading Austin Reaves To Hawks</a></h3>
+                    <a href="../html/DM.html"><img src="../asset/dm.jpg" alt="Trade Rumors Image"></a>
+                    <div class="box">
+                        <div class="icons">
+                            <span class="like" id="likeCount_5">0</span>
+                            <i class="fa-regular fa-thumbs-up" id="likeBtn_5" onclick = "toggleLike(5)"></i>
+                        </div>
+                        <div class="icons">
+                            <span disclass="dislike" id="dislikeCount_5">0</span>
+                            <i class="fa-regular fa-thumbs-down" id="dislikeBtn_5" onclick = "toggleDislike(5)"></i>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
+            <hr>
+            
+            <section id="player-updates">
+                <h2>Player Updates</h2>
+
+                <div class="extension">
+                    <br>
+                    <h1>Skylar Mays Extension</h1>
+                    <p>The Lakers have signed Skylar Mays to a contract extension, in order to increase the strength of the guard.</p>
+                    <img src="../asset/mays.jpg" alt= "mays">
+                    <br>
+                    <br>
+                    <div class="boxs">
+                        <div class="icons">
+                            <span class="like" id="likeCount_6">0</span>
+                            <i class="fa-regular fa-thumbs-up" id="likeBtn_6" onclick = "toggleLike(6)"></i>
+                        </div>
+                        <div class="icons">
+                            <span disclass="dislike" id="dislikeCount_6">0</span>
+                            <i class="fa-regular fa-thumbs-down" id="dislikeBtn_6" onclick = "toggleDislike(6)"></i>
+                        </div>
+                    </div>
+                        <h1>Dylan Windler Extension</h1>
+                        <p>The Lakers extended Dylan Windler's contract to increase the team's defensive strength.</p>
+                        <img src="../asset/dylan.webp" alt= "dylan">
+                        <br>
+                        <br>
+                        <div class="boxs">
+                            <div class="icons">
+                                <span class="like" id="likeCount_7">0</span>
+                                <i class="fa-regular fa-thumbs-up" id="likeBtn_7" onclick = "toggleLike(7)"></i>
+                            </div>
+                            <div class="icons">
+                                <span disclass="dislike" id="dislikeCount_7">0</span>
+                                <i class="fa-regular fa-thumbs-down" id="dislikeBtn_7" onclick = "toggleDislike(7)"></i>
+                            </div>
+                        </div>
+                </div>
+                            
+                            
+            </section>
+            </div>
+        </div>
+        <script src="../js/news.js"></script>
+    </body>
+
+</html>

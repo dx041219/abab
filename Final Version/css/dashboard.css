@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;600;800;900&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Hanken Grotesk", sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	/* display: grid;
+	grid-template-columns: 300px 1fr; */
+	/* display: flex; */
+	/* grid-template-rows: 60px 1fr; */
+	/* grid-template-areas: 
+	"side navbar"
+	"side main"; */
+}
+#hamburger{
+	display: none;
+}
+.hamburgerBtn{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+.sidebar{
+	/* grid-column: 1/2;
+	grid-row: 1/3; */
+	/* flex: 300px; */
+	height: 100vh;
+	position: fixed;
+	width: 150px;
+	background-color: #2c3e50;
+}
+.body{
+	/* grid-column: 2/3;
+	grid-row: 2/3; */
+	margin-left: 150px;
+	/* flex: 1; */
+	background-color: azure;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr;
+	grid-template-areas: 
+	"upcoming upcoming player"
+	"posts posts player";
+}
+.card{
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	padding: 10px;
+	margin: 10px;
+}
+.upcomingSec{
+	grid-area: upcoming;
+}
+.postSec{
+	grid-area: posts;
+}
+.playerSec{
+	grid-area: player;
+}
+
+.profileName{
+	font-size: 20px;
+	font-weight: bold;
+	color: aliceblue;
+}
+.sideBtn{
+	color: aliceblue;
+	font-size: 20px;
+	padding: 10px;
+	text-decoration: none;
+}
+.logout{
+	position: absolute;
+	width: 150px;
+	bottom: 0;
+}
+.side{
+	height: 60vh;
+}
+.side ul{
+	display: flex;
+	height: inherit;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.stats{
+	margin-top: 30px;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+img{
+	width: 100%;
+	/* height: 100%; */
+}
+.center{
+	text-align: center;
+}
+table{
+	width: 100%;
+}
+.pts span{
+	font-size: 26px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.newsContent{
+	margin: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.newsContentImg{
+	width: 50%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+	.body{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"upcoming"
+		"posts"
+		"player";
+	}
+	/* .navbar{
+		grid-column: 1/2;
+		grid-row: 1/2;
+	} */
+	.sidebar{
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.upcomingSec{
+		grid-area: upcoming;
+	}
+	.postSec{
+		grid-area: posts;
+	}
+	.playerSec{
+		grid-area: player;
+	}
+	.stats{
+		height: 60%;
+		display: grid;
+		grid-template-areas: 
+		"title" "title" "title"
+		"name" "table" "table";
+
+		justify-content: space-evenly;
+	}
+	.statsHeader{
+		grid-area: title;
+	}
+	.player{
+		/* grid-area: "name"; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.player img{
+		width: 50%;
+		/* height: 100%; */
+	}
+}

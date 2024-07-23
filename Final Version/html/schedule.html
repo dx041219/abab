@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Schedule</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/schedule.css">
+	<script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+	<!---customize css link-->
+    <link rel="stylesheet" type="text/css" href="../css/navbar2.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+        <a href="index.html" class="logo">LAKERS</a>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stats.html">Player Stats</a></li>
+            <li><a href="injuryReport.html">Injury Report</a></li>
+            <div class="matchContainer">
+                <li><a href="content.html">Matches & News</a></li>
+                <div class="dropdown">
+                    <a href="schedule.html" class="dropdown-item">Schedule</a>
+                    <a href="content.html" class="dropdown-item">News</a>
+                </div>
+            </div>
+            <li><a href="player_of_month.html">MVP</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <div class="communityContainer">
+                <li><a href="#" id="community">Community</a></li>
+                <div class="dropdown">
+                    <a href="introteam.html" class="dropdown-item">Team History</a>
+                    <a href="introduction.html" class="dropdown-item">Sports Introduction</a>
+                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+					<a href="team.html" class="dropdown-item">DevTeam</a>
+                </div>
+            </div>
+            <!-- <li><a href="#">JuniorLakers</a></li> -->
+        </ul>
+        
+        <div class="profile-button">
+            <img class="profile-picture" src="../asset/profilePic.jpg" alt="Profile Picture">
+            <div class="login-text">Log In</div>
+            <div class="dropdown">
+                <a href="fansLogin.html" class="dropdown-item">User Login</a>
+                <a href="adminLogin.html" class="dropdown-item">Admin Login</a>
+                <a href="index.html" class="dropdown-item">Logout</a>
+            </div>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+	<div class="body" style="display: grid; justify-content: center;">
+		<div style="text-align: center; margin-top: 40px;"><h1>Schedule</h1></div>
+		<div>
+			<h3 style="text-align: center;">Upcoming Gameplay</h3>
+			<div class="ticket">
+				<div class="court home">
+					<span class="courtTxt upper">Home</span>
+				</div>
+				<div class="details">
+						<span class="day upper">SUNDAY</span>
+						<span class="date upper">Jan 11</span>
+						<span class="time upper">7:00 PM PST</span>
+						<span class="playingCourt upper">CRYPTO.COM ARENA</span>
+						<span class="loc upper">Los Angeles, CALIFORNIA</span>
+				</div>
+				<div class="against">
+						<div class="oppLogo">
+							<img src="https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg" class="oppPic" alt="">
+							<div class="oppName upper">
+								Phoenix <span class="oppTeam">Suns</span>
+							</div>
+						</div>
+						<div class="oppLogo">
+							<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_CE_2D.png" class="oppPic" alt="">
+						</div>
+				</div>
+			</div>
+			<div class="ticket">
+				<div class="court away">
+					<span class="courtTxt upper">Away</span>
+				</div>
+				<div class="details">
+						<span class="day upper">SATURDAY</span>
+						<span class="date upper">Jan 13</span>
+						<span class="time upper">6:30 PM PST</span>
+						<span class="playingCourt upper">Delta center</span>
+						<span class="loc upper">Salt Lake City, UTAH</span>
+				</div>
+				<div class="against">
+						<div class="oppLogo">
+							<img src="https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg" class="oppPic" alt="">
+							<div class="oppName upper">
+								UTAH <span class="oppTeam">Jazz</span>
+							</div>
+						</div>
+						<div class="oppLogo kit">
+							<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_SE_2D.png" class="oppPic" alt="">
+						</div>
+				</div>
+			</div>
+			<div class="ticket">
+				<div class="court home">
+					<span class="courtTxt upper">Home</span>
+				</div>
+				<div class="details">
+						<span class="day upper">Monday</span>
+						<span class="date upper">Jan 15</span>
+						<span class="time upper">7:30 PM PST</span>
+						<span class="playingCourt upper">Crypto.com Arena</span>
+						<span class="loc upper">Los Angeles, CALIFORNIA</span>
+				</div>
+				<div class="against">
+						<div class="oppLogo">
+							<img src="https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg" class="oppPic" alt="">
+							<div class="oppName upper">
+								Oklahoma City <span class="oppTeam">Thunder</span>
+							</div>
+						</div>
+						<div class="oppLogo kit">
+							<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_IE_2D.png" class="oppPic" alt="">
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

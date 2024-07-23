@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Us</title>
+    <!---customize css link-->
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel = "stylesheet" href = "../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar2.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">LAKERS</a>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stats.html">Player Stats</a></li>
+            <li><a href="injuryReport.html">Injury Report</a></li>
+            <div class="matchContainer">
+                <li><a href="content.html">Matches & News</a></li>
+                <div class="dropdown">
+                    <a href="schedule.html" class="dropdown-item">Schedule</a>
+                    <a href="content.html" class="dropdown-item">News</a>
+                </div>
+            </div>
+            <li><a href="player_of_month.html">MVP</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <div class="communityContainer">
+                <li><a href="#" id="community">Community</a></li>
+                <div class="dropdown">
+                    <a href="introteam.html" class="dropdown-item">Team History</a>
+                    <a href="introduction.html" class="dropdown-item">Sports Introduction</a>
+                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    <a href="team.html" class="dropdown-item">DevTeam</a>
+                </div>
+            </div>
+            <!-- <li><a href="#">JuniorLakers</a></li> -->
+        </ul>
+        
+        <div class="profile-button">
+            <img class="profile-picture" src="../asset/profilePic.jpg" alt="Profile Picture">
+            <div class="login-text">Log In</div>
+            <div class="dropdown">
+                <a href="fansLogin.html" class="dropdown-item">User Login</a>
+                <a href="adminLogin.html" class="dropdown-item">Admin Login</a>
+                <a href="index.html" class="dropdown-item">Logout</a>
+            </div>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <div class="body">
+        <section class="contact-section">
+                <h2 class="contact-title">Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <p><b>Address:</b> Persiaran Multimedia, 63100 Cyberjaya, Selangor</p>
+                </div>
+                <br>
+                <div>
+                    <p><b>Phone:</b> <a href="tel:">+6012-3424656</a></p>
+                </div>
+                <br>
+                <div>
+                    <p><b>Email:</b> <a href="mailto:">lakers@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Get in touch with us</h3>
+                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" cols="30" rows="8" placeholder="Message"></textarea>
+                    <a href="contact.html">Send Message</a>
+                    <!-- <input type="submit" value="Send Message"> -->
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

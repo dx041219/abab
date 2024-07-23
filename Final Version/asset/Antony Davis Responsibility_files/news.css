@@ -1,0 +1,236 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body h3 
+{
+    font-size: 50px;
+    color: 	#F0F8FF;
+    font-weight: bold; 
+    margin-top: 20px; 
+    font-family: rockwell;
+    justify-items: center;
+}
+
+.containerp, .card::before
+{
+    background-position: 40%;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.card
+{
+    position: relative;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border: .1vmin solid rgba(219, 219, 219, 0.1);
+    border-radius: 4vmin;
+    box-shadow: 0.5vmin 1vmin rgba(0, 0, 0, 0.4);
+}
+
+.containerp
+{
+    margin: 20px auto;
+    max-width: 650px;
+    background-size: cover;
+}
+
+.containerp p 
+{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #EEEEEE;
+    margin: 20px 20px;
+    max-width: 650px;
+    text-align: left;
+    font-family: Lucida Console;
+}
+
+.text
+{
+    backdrop-filter: blur(4px);
+    box-shadow: inset 1px 1px 6px rgba(255, 255, 255, 0.3), 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 70%;
+    transition: 0.3s ease;
+}
+
+img:hover
+{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+body p 
+{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+body
+{
+    padding: 20px;
+    overflow: auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #393E46;
+    background-image: url(../asset/news.jpeg);
+    background-position: cover;
+    border-radius: 4vmin;
+    background-repeat: no-repeat;
+}
+
+.container
+{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position-x: center;
+}
+             
+span
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    animation: animate 3s linear infinite;
+}
+
+span::before
+{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 3px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+span:nth-child(1)
+{
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+span:nth-child(2)
+{
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+span:nth-child(3)
+{
+    top: 80px;
+    right: 0;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+span:nth-child(4)
+{
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+
+span:nth-child(5)
+{
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(6)
+{
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+span:nth-child(7)
+{
+    top: 300px;
+    right: 0;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+span:nth-child(8)
+{
+    top: 0;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+span:nth-child(9)
+{
+    top: 0;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+
+span:nth-child(10)
+{
+    top: 0;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}

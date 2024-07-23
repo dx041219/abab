@@ -1,0 +1,190 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;600;800;900&display=swap');
+
+.body{
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+.schedSec{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.ticket{
+	margin: 20px 50px;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-family: 'Hanken Grotesk', sans-serif;
+	max-width: 900px;
+}
+.court{
+	/* flex: 1; */
+	width: 40px;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+}
+.home{
+	background-color: black;
+}
+.away{
+	background-color: gray;
+}
+.courtTxt{
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	flex: 1;
+	writing-mode: vertical-rl;
+	text-align: center;
+	transform: rotate(180deg);
+	color: white;
+}
+.against{
+	flex: 5;
+	display: flex;
+	flex-direction: row;
+}
+.details{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	padding-left: 1%;
+	min-width: 150px;
+}
+.playTime{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 10%;
+}
+.day{
+	flex: 1;
+	margin-top: 15px;
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-weight: 900;
+}
+.date{
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 28px;
+	font-weight: 900;
+}
+.time{
+	flex: 1;
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+
+}
+.playingCourt{
+	flex: 1;
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-weight: 900;
+}
+.loc{
+	flex: 3;
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+
+}
+.oppLogo{
+	width: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid grey;
+}
+.oppPic{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2%;
+	min-width: 50px;
+	max-width: 100px;
+}
+.oppTeam{
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	font-weight: 900;
+}
+.alter{
+	margin: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: left;
+	font-weight: 900;
+}
+.addSchedule{
+	margin: 20px;
+	padding: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: left;
+	font-weight: 900;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: left;
+}
+.formItem{
+	flex: 1;
+	padding: 10px 0;
+}
+.submit{
+	flex: 1;
+	align-items: right;
+	width: 75px;
+	height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+	.schedSec{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.ticket{
+		margin: 20px 0;
+		flex-direction: column;
+		margin: 20px 50px;
+		display: flex;
+		align-items: center;
+		border: 1px solid black;
+		border-radius: 5px;
+		font-family: 'Hanken Grotesk', sans-serif;
+	}
+	.court{
+		width: 100%;
+	}
+	.courtTxt{
+		font-family: 'Hanken Grotesk', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		writing-mode: horizontal-tb;
+		transform: rotate(0deg);
+		text-align: center;
+		color: white;
+	}
+	.against{
+		flex: 1;
+		flex-direction: column;
+	}
+}

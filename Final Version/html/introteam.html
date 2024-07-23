@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../css/team.css">
+    <title>Los Angeles Lakers</title>
+    <!---customize css link-->
+    <link rel="stylesheet" type="text/css" href="../css/navbar2.css">
+
+    <!---boxicon link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!---google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">LAKERS</a>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stats.html">Player Stats</a></li>
+            <li><a href="injuryReport.html">Injury Report</a></li>
+            <div class="matchContainer">
+                <li><a href="content.html">Matches & News</a></li>
+                <div class="dropdown">
+                    <a href="schedule.html" class="dropdown-item">Schedule</a>
+                    <a href="content.html" class="dropdown-item">News</a>
+                </div>
+            </div>
+            <li><a href="player_of_month.html">MVP</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <div class="communityContainer">
+                <li><a href="#" id="community">Community</a></li>
+                <div class="dropdown">
+                    <a href="introteam.html" class="dropdown-item">Team History</a>
+                    <a href="introduction.html" class="dropdown-item">Sports Introduction</a>
+                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    <a href="team.html" class="dropdown-item">DevTeam</a>
+                </div>
+            </div>
+            <!-- <li><a href="#">JuniorLakers</a></li> -->
+        </ul>
+        
+        <div class="profile-button">
+            <img class="profile-picture" src="../asset/profilePic.jpg" alt="Profile Picture">
+            <div class="login-text">Log In</div>
+            <div class="dropdown">
+                <a href="fansLogin.html" class="dropdown-item">User Login</a>
+                <a href="adminLogin.html" class="dropdown-item">Admin Login</a>
+                <a href="index.html" class="dropdown-item">Logout</a>
+            </div>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <div class="body">
+        <div class="header">
+            <h1>Los Angeles Lakers</h1>
+            <div id="img-box">
+                <div id="main">
+                    <div id="img1"></div>
+                    <div id="img2"></div>
+                    <div id="img3"></div>
+                    <div id="img4"></div>
+                    <div id="img5"></div>
+                    <div id="img6"></div>
+                    <div id="img7"></div>
+                </div>
+                <div class="mask">
+                    <div class="l_mask">
+                        <span class="mask_btn">&#11164;</span>
+                    </div>
+                    <div class="r_mask">
+                        <span class="mask_btn">&#11166;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="content-section">
+            <h2>Team History</h2>
+            <br><br>
+            <h1 id = "word" onclick = "toggleVisibility1()">Lakers</h1>
+            <div id = "pdiv1" class = "hide"><p><br><img src = '../asset/lakers.jpeg' alt = "lakers" style = "width:270px; height: 170px;"><br><br>The Los Angeles Lakers are an American professional basketball team based in Los Angeles. The Lakers compete in the National Basketball Association (NBA) as a member of the Pacific Division of the Western Conference. The Lakers play their home games at Crypto.com Arena, an arena shared with the NBA's Los Angeles Clippers, the Los Angeles Sparks of the Women's National Basketball Association, and the Los Angeles Kings of the National Hockey League. The Lakers are one of the most successful teams in the history of the NBA, and have won 17 NBA championships, tied with the Boston Celtics for the most in NBA history. More recently, the Lakers were the champions of the NBA's inaugural In-Season Tournament in 2023.</p>
+            </div>
+            <br>
+            <h1 id = "word" onclick = "toggleVisibility2()" style="margin-left: 50%;">Minneapolis</h1>
+            <div id = "pdiv2" class = "hide">
+            <p><br><img src = '../asset/georgemikan.jpeg' alt = "george" style = "width: 270px; height: 170px;"><br><br>The franchise had its start in 1947 when it acquired the Detroit Gems of the National Basketball League (NBL), a team that had folded. The new team, known as the Minneapolis Lakers, started playing in Minneapolis, Minnesota. The Lakers, led by great George Mikan, were once a part of the National Basketball League (NBL). They won the 1948 NBL championship before switching to the rival Basketball Association of America, where they would go on to win five more titles. Following Mikan's retirement and financial difficulties in the late 1950s, they moved to Los Angeles prior to the 1960–61 season.</p>
+            </div>
+            <br>
+            <h1 id = "word" onclick = "toggleVisibility3()">Rivalry</h1>
+            <div id = "pdiv3" class = "hide"><p><br> <img src = '../asset/rivalry.jpg' alt = "rivarly" style = "width: 270px; height: 170px;"><br><br>Los Angeles, led by Hall of Famers Elgin Baylor and Jerry West, advanced to the NBA Finals six times in the 1960s but fell short against the Celtics in each series, sparking the start of a legendary and enduring rivalry. Under the direction of new head coach Bill Sharman, the Lakers won their sixth NBA championship—and first in Los Angeles—in 1972 after acquiring four-time MVP Wilt Chamberlain in 1968. The Lakers acquired superstar Kareem Abdul-Jabbar, who would go on to win three MVP awards as a Laker, through a trade after West and Chamberlain retired. Despite the club's failure to make it to the Finals in the late 1970s, two significant developments in 1979 would usher in a new period of prosperity for the squad. First, when Jerry Buss bought the Lakers, he introduced the idea that basketball games should be seen as both athletic and entertainment spectacles. Second, in the 1979 NBA draft, Magic Johnson was selected first overall by the Lakers.</p>
+            </div>
+            <br>
+            <h1 id = "word" onclick = "toggleVisibility4()" style ="margin-left: 50%">Show Time</h1>
+            <div id = "pdiv4" class = "hide"><p><img src = '../asset/showtime.webp' alt = "showtime" style = "width: 270px; height: 250px;"> <br><br>The Lakers had two superstars to lead their squad in Abdul-Jabbar and Johnson, a passing prodigy point guard and powerful centre. The Lakers became a dominant team in the NBA for the duration of the 1980s with the selection of forward James Worthy in the 1982 NBA Draft and the appointment of head coach Pat Riley in 1981. Because of Johnson's facilitation of the club's fast break, transition offence, the team was known as the "Showtime Lakers". Over a nine-year era, the team won five championships, including two of the three highly anticipated Finals matches versus the Boston Celtics. The Lakers overcame the Celtics in 1985 and 1987, although they were defeated by their Boston rivals in the 1984 Finals.</p>
+            </div>
+            <br>
+            <h1 id = "word" onclick = "toggleVisibility5()">Three-Peat</h1>
+            <div id = "pdiv5" class = "hide"><p><img src = '../asset/tp.jpg' alt = "tp" style = "width: 220px; height: 250px;"><br><br>The Lakers suffered in the early 1990s after Worthy, Johnson, and Abdul-Jabbar retired and Riley left. The Lakers didn't regain their supremacy in the early 2000s until they traded for Kobe Bryant's draft rights from the Charlotte Hornets in 1996 and acquired star centre Shaquille O'Neal. Between 2000 and 2002, the Lakers' superstar tandem of Bryant and O'Neal, along with Hall of Fame coach Phil Jackson, guided the team to three straight titles, completing the franchise's second "three-peat". After losing to the Detroit Pistons in the 2004 Finals, the Lakers dealt away O'Neal, bringing an end to the exciting but turbulent "Shaq-and-Kobe" era. Bryant and Jackson didn't make a comeback to the NBA Finals until the Lakers acquired Pau Gasol. They lost to the Celtics in 2008 but won two more titles in 2009 and 2010. The Lakers and Celtics faced off in the 2010 Finals, where Los Angeles emerged victorious in a seven-game series to earn their 16th championship over the longstanding foe.</p>
+            </div>
+            <br>
+            <h1 id = "word" onclick = "toggleVisibility6()" style="margin-left: 50%">Championships</h1>
+            <div id = "pdiv6" class = "hide"><p><img src = '../asset/lbj.jpg' alt = "lbj" style = "width: 300px; height: 250px;"><br><br>Following a series of turbulent playoff eliminations, Jackson announced his retirement from coaching in 2011, and the Lakers went through their longest postseason absence in franchise history. After 20 years as a Laker, Bryant retired in 2016 while Gasol left as a free agent in 2014. In 2018, following several seasons of rebuilding with youthful, highly-regarded prospects, the Lakers signed superstar LeBron James. In order to acquire star centre Anthony Davis in 2019, the organisation surrendered a number of such prospects. In 2020, the Lakers—led by James, Davis, and head coach Frank Vogel—tied the Boston Celtics for the most NBA championships with their 17th victory.</p>
+            </div>
+            <br>
+            <h1 id = "word" onclick = "toggleVisibility7()">Team honors</h1>
+            <div id = "pdiv7" class = "hide"><p><img src = '../asset/retired.webp' alt = "retired" style = "width: 300px; height: 250px;"><br><br>The NBA record for the longest winning streak, 33 games in a row, was set by the Lakers in the 1971–72 season. Los Angeles has produced 26 Hall of Famers as players and four as coaches. Together, Abdul-Jabbar, Johnson, O'Neal, and Bryant have earned eight NBA MVP titles while playing for the Lakers.</p>
+            </div>
+        </section>
+
+        <section id="history" class="content-section hidden">
+            <h2>Team History</h2>
+            <p>Founded in 1947, the Lakers have a rich history and are one of the most successful franchises in the NBA. They have won numerous NBA championships and have been home to legendary players.</p>
+    
+        </section>
+
+        <section id="history" class="content-section hidden">
+            <h2>Team History</h2>
+            <p>Founded in 1947, the Lakers have a rich history and are one of the most successful franchises in the NBA. They have won numerous NBA championships and have been home to legendary players.</p>
+    
+        </section>
+
+        <section id="championships" class="content-section hidden">
+            <h2>Championships</h2>
+            <p>The Lakers have won a total of 17 NBA championships, tying them with the Boston Celtics for the most in NBA history.</p>
+        </section>
+        </section>
+
+        <section id="colors" class="content-section hidden">
+            <h2>Team Colors</h2>
+            <p>The team colors of the Los Angeles Lakers are purple, gold, and white.</p>
+
+        </section>
+
+        <section id="arena" class="content-section hidden">
+            <h2>Home Arena</h2>
+            <p>The Lakers play their home games at the Staples Center in downtown Los Angeles.</p>
+        </section>
+
+        <script src="../js/introteam.js"></script>
+    </div>
+    <!-- <script>
+        function showSection(sectionId) 
+        {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) 
+            {
+                sections[i].classList.add('hidden');
+            }
+
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
+        }
+
+        let oMain = document.querySelector('#main');
+        let oMask = document.querySelector('.mask');
+        let aImg = document.querySelectorAll('#main div');
+        let aButton = document.querySelectorAll('.mask_btn');
+        let speed = -5;
+
+
+        oMain.innerHTML += oMain.innerHTML
+        let move = () => 
+        {
+        if (oMain.offsetLeft < - oMain.offsetWidth / 2)
+        {
+            oMain.style.left = '0';
+        }
+        if (oMain.offsetLeft > 0)
+        {
+            oMain.style.left = - oMain.offsetWidth / 2 + 'px';
+        }
+        oMain.style.left = oMain.offsetLeft + speed + 'px';
+        };
+        let timer = setInterval(move, 30);
+        oMask.addEventListener('mouseover', () => 
+        {
+            clearInterval(timer);
+        });
+        oMask.addEventListener('mouseout', () => 
+        {
+            timer = setInterval(move, 30);
+        });
+        aButton[0].onclick = () => 
+        {
+            speed = -5;
+        };
+        aButton[1].onclick = () => 
+        {
+            speed = 5;
+        };
+ 
+        function toggleVisibility1() 
+        { 
+            var x = document.getElementById("pdiv1"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+        function toggleVisibility2() 
+        { 
+            var x = document.getElementById("pdiv2"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+        function toggleVisibility3() 
+        { 
+            var x = document.getElementById("pdiv3"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+        function toggleVisibility4() 
+        { 
+            var x = document.getElementById("pdiv4"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+        function toggleVisibility5() 
+        { 
+            var x = document.getElementById("pdiv5"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+        function toggleVisibility6() 
+        { 
+            var x = document.getElementById("pdiv6"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+        function toggleVisibility7() 
+        { 
+            var x = document.getElementById("pdiv7"); 
+            if (x.style.display === "none") 
+            { 
+                x.style.display = "block"; 
+            } 
+            else 
+            { 
+                x.style.display = "none"; 
+            } 
+        };
+    
+    </script> -->
+</body>
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Schedule Management</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/schedule.css">
+	<link rel="stylesheet" href="../css/popupbox.css">
+	<script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- <div  id="navBar"	>
+		<nav>
+			<input type="checkbox" id="hamburger">
+			<label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+			<label for="logo"><a href="index.html"><img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="" class="teamLogo"></a></label>
+			<ul>
+				<li><a href="#" class="navBtn active">Home</a></li>
+				<li><a href="#" class="navBtn ">Injury Report</a></li>
+				<li><a href="about.html" class="navBtn ">About</a></li>
+				<li><a href="#" class="navBtn ">Services</a></li>
+				<li><a href="contact.html" class="navBtn ">Contact Us</a></li>
+				<li><a href="#" class="navBtn ">Feedback</a></li>
+			</ul>
+		</nav>
+	</div> -->
+	<div class="sidebar">
+		<input type="checkbox" id="hamburger">
+		<label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+		<div class="side">
+			<div class="profile">
+				<!-- <img src="../asset/admin.png" alt="" class="profilePic"> -->
+				<div class="profileName">Admin</div>
+			</div>
+			<ul>
+				<li><a href="dashboard.html" class="sideBtn ">Dashboard</a></li>
+				<li><a href="scheduleMgmt.html" class="sideBtn ">Schedule Management</a></li>
+				<li><a href="editPOTM.html" class="sideBtn ">POTM</a></li>
+				<li><a href="editNews.html" class="sideBtn ">News Management</a></li>
+				<!-- <li><a href="#" class="sideBtn ">Fan Management</a></li> -->
+				<!-- <li><a href="#" class="sideBtn ">Feedback Management</a></li> -->
+			</ul>
+		</div>
+
+	</div>
+	<div class="body">
+		<div class="popup" id="popup">
+			<div class="popup-content">
+				<span class="close-btn" id="closePopupBtn">&times;</span>
+				<h2>Player Information</h2>
+				<form id="playerForm">
+					<label for="date">Date:</label>
+					<input type="text" id="date" required>
+					
+					<label for="playTime">Time:</label>
+					<input type="time" id="playTime" required>
+	
+					<label for="location">Location:</label>
+					<input type="text" id="location" required>
+	
+					<label for="rpg">Opponent:</label>
+					<input type="text" id="rpg" required>
+	
+					<label for="homeAway">Home/Away:</label>
+					<select name="homeAway" id="homeAway">
+						<option value="home">Home</option>
+						<option value="away">Away</option>
+					</select>
+	
+					<label for="court">Court:</label>
+					<input type="text" id="court" required>
+
+					<label for="kit">Kit:</label>
+					<select name="kit" id="kit">
+						<option value="white">White</option>
+						<option value="yellow">Yellow</option>
+						<option value="purple">Purple</option>
+					</select>
+
+					<label for="stl">Opponent Logo:</label>
+					<input type="file" id="opp" required>
+
+	
+					<button type="button" id="submitBtn">Submit</button>
+				</form>
+			</div>
+		</div>
+		<div><h1>Schedule Management</h1></div>
+		<section class="schedSec">
+			<div>
+				<h3 style="margin-left: 3%;">Upcoming Gameplay</h3>
+				<div class="ticket" id="ticket1">
+					<div class="court home">
+						<span class="courtTxt upper">Home</span>
+					</div>
+					<div class="details">
+							<span class="day upper">SUNDAY</span>
+							<span class="date upper">Jan 11</span>
+							<span class="time upper">7:00 PM PST</span>
+							<span class="playingCourt upper">CRYPTO.COM ARENA</span>
+							<span class="loc upper">Los Angeles, CALIFORNIA</span>
+					</div>
+					<div class="against">
+							<div class="oppLogo">
+								<img src="https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg" class="oppPic" alt="">
+								<div class="oppName upper">
+									Phoenix <span class="oppTeam">Suns</span>
+								</div>
+							</div>
+							<div class="oppLogo">
+								<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_CE_2D.png" class="oppPic" alt="">
+							</div>
+					</div>
+					<div class="alter">
+						<button id="openPopupBtn"><i class="fa-solid fa-pen-to-square"></i></button>
+						<button id="delete"><i class="fa-solid fa-trash"></i></button>
+					</div>
+				</div>
+				<div class="ticket" id="ticket2">
+					<div class="court away">
+						<span class="courtTxt upper">Away</span>
+					</div>
+					<div class="details">
+							<span class="day upper">SATURDAY</span>
+							<span class="date upper">Jan 13</span>
+							<span class="time upper">6:30 PM PST</span>
+							<span class="playingCourt upper">Delta center</span>
+							<span class="loc upper">Salt Lake City, UTAH</span>
+					</div>
+					<div class="against">
+							<div class="oppLogo">
+								<img src="https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg" class="oppPic" alt="">
+								<div class="oppName upper">
+									UTAH <span class="oppTeam">Jazz</span>
+								</div>
+							</div>
+							<div class="oppLogo kit">
+								<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_SE_2D.png" class="oppPic" alt="">
+							</div>
+					</div>
+					<div class="alter">
+						<button id="openPopupBtn2"><i class="fa-solid fa-pen-to-square"></i></button>
+						<button id="delete2"><i class="fa-solid fa-trash"></i></button>
+					</div>
+				</div>
+				<div class="ticket" id="ticket3">
+					<div class="court home">
+						<span class="courtTxt upper">Home</span>
+					</div>
+					<div class="details">
+							<span class="day upper">Monday</span>
+							<span class="date upper">Jan 15</span>
+							<span class="time upper">7:30 PM PST</span>
+							<span class="playingCourt upper">Crypto.com Arena</span>
+							<span class="loc upper">Los Angeles, CALIFORNIA</span>
+					</div>
+					<div class="against">
+						<div class="oppLogo">
+							<img src="https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg" class="oppPic" alt="">
+							<div class="oppName upper">
+								Oklahoma City <span class="oppTeam">Thunder</span>
+							</div>
+						</div>
+						<div class="oppLogo kit">
+							<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_IE_2D.png" class="oppPic" alt="">
+						</div>
+					</div>
+					<div class="alter">
+						<button id="openPopupBtn3"><i class="fa-solid fa-pen-to-square"></i></button>
+						<button id="delete3"><i class="fa-solid fa-trash"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="addSchedule">
+				<form action="">
+					<h3>Add Schedule</h3>
+					<div class="form">
+						<div class="formItem">
+							<label for="date">Date</label>
+							<input type="date" name="date" id="date">
+						</div>
+						<div class="formItem">
+							<label for="time">Time</label>
+							<input type="time" name="time" id="time">
+						</div>
+						<div class="formItem">
+							<label for="location">Location</label>
+							<input type="text" name="location" id="location">
+						</div>
+						<div class="formItem">
+							<label for="opponent">Opponent</label>
+							<input type="text" name="opponent" id="opponent">
+							<div class="formItem">
+								<label for="homeAway">Home/Away</label>
+								<select name="homeAway" id="homeAway">
+									<option value="home">Home</option>
+									<option value="away">Away</option>
+								</select>
+							</div>
+						</div>
+						<div class="formItem">
+							<label for="court">Court</label>
+							<input type="text" name="court" id="court">
+						</div>
+						<div class="formItem">
+							<label for="kit">Kit</label>
+							<select name="kit" id="kit">
+								<option value="white">White</option>
+								<option value="yellow">Yellow</option>
+								<option value="purple">Purple</option>
+							</select>
+						</div>
+						<div class="formItem">
+							<label for="logo">Logo</label>
+							<input type="file" name="oppLogo" id="oppLogo">
+						</div>
+						<div class="formItem">
+							<button type="submit" class="submit">Submit</button>
+						</div>
+					</form>
+			</div>
+		</section>
+	</div>
+	<script src="../js/script.js"></script>
+	<script src="../js/schedulePopup.js"></script>
+</body>
+</html>

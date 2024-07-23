@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/schedule.css">
+	<link rel="stylesheet" href="../css/dashboard.css">
+	<script src="https://kit.fontawesome.com/760ce4c318.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- <div  id="navBar">
+		<nav>
+			<input type="checkbox" id="hamburger">
+			<label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+			<label for="logo"><a href="index.html"><img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="" class="teamLogo"></a></label>
+			<ul>
+				<li><a href="#" class="navBtn active">Home</a></li>
+				<li><a href="#" class="navBtn ">Injury Report</a></li>
+				<li><a href="about.html" class="navBtn ">About</a></li>
+				<li><a href="#" class="navBtn ">Services</a></li>
+				<li><a href="contact.html" class="navBtn ">Contact Us</a></li>
+				<li><a href="#" class="navBtn ">Feedback</a></li>
+			</ul>
+		</nav>
+	</div> -->
+	<div class="sidebar">
+		<input type="checkbox" id="hamburger">
+		<label for="hamburger" class="hamburgerBtn"><i class="fa-solid fa-bars"></i></label>
+		<div class="side">
+			<div class="profile">
+				<!-- <img src="../asset/admin.png" alt="" class="profilePic"> -->
+				<div class="profileName">Admin</div>
+			</div>
+			<ul>
+				<li><a href="dashboard.html" class="sideBtn ">Dashboard</a></li>
+				<li><a href="scheduleMgmt.html" class="sideBtn ">Schedule Management</a></li>
+				<li><a href="editPOTM.html" class="sideBtn ">POTM</a></li>
+				<li><a href="editNews.html" class="sideBtn ">News Management</a></li>
+				<!-- <li><a href="#" class="sideBtn ">Fan Management</a></li> -->
+				<!-- <li><a href="#" class="sideBtn ">Feedback Management</a></li> -->
+			</ul>
+		</div>
+		<div class="logout">
+			<a href="../html/adminLogin.html" class="sideBtn logout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+		</div>
+	</div>
+
+	<section class="body">
+		<div class="card upcomingSec">
+			<h3 style="margin-left: 3%;" class="hanken-900 font-26">Upcoming Gameplay</h3>
+			<div class="ticket">
+				<div class="court home">
+					<span class="courtTxt upper">Home</span>
+				</div>
+				<div class="details">
+						<span class="day upper">SUNDAY</span>
+						<span class="date upper">Jan 11</span>
+						<span class="time upper">7:00 PM PST</span>
+						<span class="playingCourt upper">CRYPTO.COM ARENA</span>
+						<span class="loc upper">Los Angeles, CALIFORNIA</span>
+				</div>
+				<div class="against">
+						<div class="oppLogo">
+							<img src="https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg" class="oppPic" alt="">
+							<div class="oppName upper">
+								Phoenix <span class="oppTeam">Suns</span>
+							</div>
+						</div>
+						<div class="oppLogo">
+							<img src="https://appimages.nba.com/p/tr:n-nf/2023/uniform/Los%20Angeles%20Lakers/LAL_CE_2D.png" class="oppPic" alt="">
+						</div>
+				</div>
+			</div>
+			<button style="margin-left: 7%; font-family: 'Hanken Grotesk', sans-serif; font-weight: 900; font-size: 16px;"><a href="scheduleMgmt.html">Update schedule</a></button>
+		</div>
+
+		<div class="card postSec">
+			<div class="news">
+				<div class="newsTitle">
+					<div class="newsTitleTxt hanken-900 font-26">Latest News</div>
+					<div class="newsTitleDate hanken-600">Jan 11, 2024</div>
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="lebron_grant.html">LeBron James sent signed jersey to Mavericks' Grat Williams after scuffle</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="injury.html">Lakers Injury Report: LeBron James Questionable, Cam Reddish Out Against Thunder</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="adlossutah.html">Antony Davis Takes Responsibility For Lakers Loss Against Jazz</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="dangelo.html">News: D’Angelo Russell Was ‘Just Hooping’ In 39-Point Performance Against Jazz</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<div class="newsContent">
+					<div class="newsContentTxt hanken-600">
+						<a href="DM.html">Dejounte Murray Trade Rumors: Lakers Have Shown ‘No Interest’ In Trading Austin Reaves To Hawks</a>
+					</div>
+					<!-- <div class="newsContentImg">
+						<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="">
+					</div> -->
+				</div>
+				<button style="width: 100px; height: 30px;"><a href="editNews.html">Add News</a></button>
+			</div>
+		</div>
+
+		<div class="card playerSec">
+			<div class="stats center">
+				<div class="center hanken-900 font-26 statsHeader">
+					Player of the Month <br>
+					(JAN 2024)
+				</div>
+				<div class="player">
+					<img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203076.png" alt="">
+					<div class="playerName hanken-900 font-26">Anthony <span class="upper hanken-900">Davis</span></div>
+					<div class="playerTeam hanken-900">Los Angeles Lakers</div>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td class="hanken-600">PPG</td>
+							<td class="hanken-900 font-26">25.1</td>
+						</tr>
+						<tr>
+							<td class="hanken-600">RPG</td>
+							<td class="hanken-900 font-26">12.1</td>
+						</tr>
+						<tr>
+							<td class="hanken-600">APG</td>
+							<td class="hanken-900 font-26">3.5</td>
+						</tr>
+						<tr>
+							<td class="hanken-600">PIE</td>
+							<td class="hanken-900 font-26">16.4</td>
+						</tr>
+					</table>
+					<button class="hanken-900" style="margin-top: 30px; height: 30px;"><a href="editPOTM.html">Edit Player Of The Month</a></button>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
