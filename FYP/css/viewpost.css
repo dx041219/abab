@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body 
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+section
+{
+    text-align: center;
+}
+
+h3
+{
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+img
+{
+    width: 700px;
+    height: auto;
+}
+
+.container 
+{
+    width: 700px; 
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    box-sizing: border-box; 
+}
+
+.recipes
+{
+    text-align: left;
+    font-weight: unset;
+    font-family: Poppins;
+    align-self: flex-start;
+    width: 100%; 
+}
+
+.commentbox
+{
+    background-color: #C8C7C4;
+    width: 700px; 
+    margin: 20px auto; 
+    padding: 20px 30px; 
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+.commentbox h2
+{
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.textbox
+{
+    width: 500px;
+    height: 150px;
+    display: block;
+    background-color: #E5E4E1;
+    padding-left: 10px; 
+    padding-top: 10px;
+}
+
+.postcom
+{
+    background-color: #F4F3EF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.postcom:hover
+{
+    background-color: #404083;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.1);
+}
+
+.hiscom
+{
+    padding-top: 30px;
+    width: 700px; 
+    margin: 20px auto; 
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+.hiscom p
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: left;
+}
+
+.comment 
+{
+    display: flex;
+    align-items: start; 
+}
+
+.userimg {
+    width: 60px; 
+    height: auto; 
+    border-radius: 50%;
+    margin-right: 20px; 
+    padding-top: 30px;
+}
+
+.name
+{
+    font-weight: bold;
+    font-family: Poppins;
+    padding-top: 30px;
+    font-size: 20px;
+    
+}
+
+.comment p
+{
+    font-size: 15px;
+    font-weight: unset;
+}
+
+.like
+{
+    width: 700px; 
+    margin: 20px auto; 
+    padding-top: 30px;
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+.likebtn
+{
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30%;
+    height: auto;
+}
+
+.likebtn:hover
+{
+    background-color: #a8249d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.1);
+}
+
+#likeCount
+{
+    padding-left: 5px;
+}

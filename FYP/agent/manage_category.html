@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminnavstyle.css">
+    <link rel="stylesheet" href="../css/manageUser.css">
+    <link rel="stylesheet" href="../css/manageCategory.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Manage Category</title>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <div class="nav">
+            <div class="sidebar">
+                <a href="adminboard.html"><img src="../image/logo.png"></a>
+                <ul>
+                    <li><a href="/manageUser"><i class="fas fa-user"></i>Manage User</a></li>
+                    <li><a href="./A_menu_1.html"><i class="fas fa-pen"></i>Add Post</a></li>
+                    <li><a href="./A_rewards_1.html"><i class="fas fa-file"></i>Manage Post</a></li>
+                    <li><a href="/addCategory"><i class="fas fa-pen"></i>Add Category</a></li>
+                    <li><a href="/manageCategory" style="font-size: 13px;"><i class="fas fa-list"></i>Manage Category</a></li>
+                    <li>
+                        <form action="/adminLogout" class="inline" method="POST">
+                            <button type="submit">
+                                <i class="fa-solid fa-door-closed">Logout</i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>MANAGE CATEGORY</h2>
+
+            <div class="search-add-container">
+                <div class="search-bar">
+                    <form method="GET" action="/manageCategory">
+                        <input type="text" name="search" placeholder="Search by category" value="">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-container">
+                <div class="border">
+                    <img src="path_to_category_image.jpg" alt="">
+                    <div>
+                        <h3>Category Title</h3>
+                    </div>
+                    <div class="bu">
+                        <button class="edit" onclick="window.location.href='edit_category_url'">Edit</button>
+                        <form action="delete_category_url" method="POST" onsubmit="return confirm('Delete?')">
+                            <button class="delete">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Repeat the above block for each category -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

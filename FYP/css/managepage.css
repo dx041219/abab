@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p
+{
+    font-family: Poppins;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.search-add-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add {
+    /* padding: 8px 15px; */
+    font-size: 14px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.border-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.border {
+    flex: 0 0 30%;
+    margin: 15px;
+    /* border-radius: 10px; */
+    background-color: #ececec;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.border img {
+    width: 325px;
+    height: 243.75px;
+    /* border-radius: 18px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.border h3 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit, .delete {
+    color: #fff;
+    border-radius: 9px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.edit {
+    background-color: orange;
+}
+
+.delete {
+    background-color: red;
+}
+
+.edit:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.delete:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}

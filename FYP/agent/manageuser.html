@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/adminnavstyle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/manageUser.css">
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <div class="nav">
+            <div class="sidebar">
+                <a href="/manageUser"><img src="../image/logo.png"></a>
+                <ul>
+                    <li><a href="/manageUser"><i class="fas fa-user"></i>Manage User</a></li>
+                    <li><a href="./A_menu_1.html"><i class="fas fa-pen"></i>Add Post</a></li>
+                    <li><a href="./A_rewards_1.html"><i class="fas fa-file"></i>Manage Post</a></li>
+                    <li><a href="/addCategory"><i class="fas fa-pen"></i>Add Category</a></li>
+                    <li><a href="/manageCategory" style="font-size: 13px;"><i class="fas fa-list"></i>Manage Category</a></li>
+                    <li>
+                        <form action="/adminLogout" class="inline" method="POST">
+                            <button type="submit">
+                                <i class="fa-solid fa-door-closed">Logout</i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        
+    <div class="content">
+        <br><br>
+        <h2>MANAGE USER</h2> 
+        <br>
+        <div class="search-bar">
+            <form method="GET" action="/manageUser">
+                <input type="text" name="search" placeholder="Search by username" value="">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <!-- Example table structure with static content -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: center">ID</th>
+                    <th>Profile</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th style="text-align: center">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <tr>
+                    <td style="text-align: center">1</td>
+                    <td>
+                        <img class="image rounded-circle" src="path_to_profile_image.jpg" alt="Profile Picture" style="width: 80px; height: 80px; padding: 10px; border-radius: 50%; margin-right: 20px; object-fit: cover;">
+                    </td>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td style="text-align: center">
+                        <div>
+                            <form action="delete_user_url" method="POST" onsubmit="return confirm('Delete?')">
+                                <button class="delete">Delete</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Repeat the above block for each user -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/adminnavstyle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: auto;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            padding: 15px;
+            background-color: #F5f5f5;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .posts-section {
+        background-color: #F5f5f5;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    }
+
+    .posts-table {
+        width: 100%; /* Make the table width span the full width of the section */
+        border-collapse: collapse; /* Collapse cell borders */
+    }
+
+    .posts-table th, .posts-table td {
+        padding: 10px; /* Add padding to cells */
+        border: 1px solid #ccc; /* Add border to cells */
+        text-align: left; /* Left-align text in cells */
+        vertical-align: top; /* Align content to the top of the cell */
+    }
+
+    .posts-table th {
+        background-color: #e0e0e0; /* Optional: Change the header background color */
+    }
+
+    .post-image {
+        width: 50px; /* Width of the image */
+        height: 50px; /* Height of the image */
+        border-radius: 4px; /* Optional: Rounded corners */
+    }
+
+        .stat-card h3
+        {
+            font-size: 30px;
+        }
+
+        .stat-card p
+        {
+            font-size: 20px;
+        }
+       
+        .search-box {
+        display: flex;
+        align-items: center;
+        width: 400px; /* Adjust as needed */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden; /* Ensure border-radius applies to all children */
+    }
+
+    .search-input {
+        flex-grow: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+
+    .search-button {
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        color: #aaa;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="../css/adminnavstyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <div class="nav">
+            <div class="sidebar">
+                <a href="adminboard.html"><img src="../image/logo.jpg"></a>
+                <ul>
+                    <li><a href="./A_user.html"><i class="fas fa-user"></i>Manage User</a></li>
+                    <li><a href="./A_menu_1.html"><i class="fas fa-pen"></i>Add Post</a></li>
+                    <li><a href="./A_rewards_1.html"><i class="fas fa-file"></i>Manage Post</a></li>
+                    <li><a href="./A_rewards_1.html" style="font-size: 13px;"><i class="fas fa-list"></i>Manage Category</a></li>
+                    <li><a href="./adminlogin.html"><i class="fas fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <br><br>
+        <div class="stats">
+            <div class="stat-card">
+                <h3><i class="fas fa-users"></i> Users</h3> 
+                <br>
+                <p>1500</p>
+            </div>
+            <div class="stat-card">
+                <h3><i class="fas fa-user-shield"></i> Admins</h3> 
+                <br>
+                <p>5</p>
+            </div>
+            <div class="stat-card">
+                <h3><i class="fas fa-list"></i> Categories</h3> 
+                <br>
+                <p>12</p>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="search-box">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-button">
+                <i class="fas fa-search search-icon"></i>
+            </button>
+        </div>
+        <br>
+        <div class="posts-section">
+            <h2>Recent Posts</h2>
+        
+            <table class="posts-table">
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="path/to/image1.jpg" alt="Post Image 1" class="post-image"></td>
+                    <td>Post Title 1</td>
+                    <td>hfsadifufhse</td>
+                </tr>
+                <tr>
+                    <td><img src="path/to/image2.jpg" alt="Post Image 2" class="post-image"></td>
+                    <td>Post Title 2</td>
+                    <td>jksdfgjdshgiuughdighudish</td>
+                </tr>
+                <tr>
+                    <td><img src="path/to/image3.jpg" alt="Post Image 3" class="post-image"></td>
+                    <td>Post Title 3</td>
+                    <td>ijahfhaiufhauihuasfhiuhiioafjsi</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

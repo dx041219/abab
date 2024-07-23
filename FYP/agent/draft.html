@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Category</title>
+    <link rel="stylesheet" href="../css/managecat.css">
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="../css/adminnavstyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <div class="nav">
+            <div class="sidebar">
+                <a href="adminboard.html"><img src="../image/logo.jpg"></a>
+                <ul>
+                    <li><a href="./A_staff.html"><i class="fas fa-id-card"></i>Dashboard</a></li>
+                    <li><a href="./A_user.html"><i class="fas fa-user"></i>Manage User</a></li>
+                    <li><a href="./A_menu_1.html"><i class="fas fa-pen"></i>Add Post</a></li>
+                    <li><a href="./A_rewards_1.html"><i class="fas fa-file"></i>Manage Post</a></li>
+                    <li><a href="./A_rewards_1.html" style="font-size: 13px;"><i class="fas fa-list"></i>Manage Categories</a></li>
+                    <li><a href="./adminlogin.html"><i class="fas fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>        
+        <div class="category">
+            <h2>Manage Category</h2>
+
+            <button class="add" onclick="showSection('add')"> Add Category </button>
+
+            <table>
+                <tr>
+                    <th>Images</th>
+                    <th>Title</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tr>
+                    <td><img src="../image/chinesefood.jpeg"></td>
+                    <td>Chinese</td>
+                    <td><button class="edit" onclick="showSection('edit')">Edit</button></td>
+                    <td><button class="delete" onclick="deleteCategory(this)">Delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="../image/indian.jpg"></td>
+                    <td>Indian</td>
+                    <td><button class="edit" onclick="showSection('edit')">Edit</button></td>
+                    <td><button class="delete" onclick="deleteCategory(this)">Delete</button></td>
+                </tr>
+
+                <tr>
+                    <td><img src="../image/italian.jpg"></td>
+                    <td>Italian</td>
+                    <td><button class="edit" onclick="showSection('edit')">Edit</button></td>
+                    <td><button class="delete" onclick="deleteCategory(this)">Delete</button></td>
+                </tr>
+            </table>
+
+            <section id="add" style="display: none;">
+                <h2>Add Category</h2>
+                <form id="addForm">
+                    <div class="form-group">
+                        <label for="addImage">Image URL:</label>
+                        <input type="text" id="addImage" name="addImage">
+                    </div>
+                    <div class="form-group">
+                        <label for="addTitle">Title:</label>
+                        <input type="text" id="addTitle" name="addTitle">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Add Category">
+                    </div>
+                </form>
+            </section>
+
+            <section id="edit" style="display: none;">
+                <h2>Edit Category</h2>
+                <form id="editForm">
+                    <div class="form-group">
+                        <label for="editImage">Image URL:</label>
+                        <input type="text" id="editImage" name="editImage">
+                    </div>
+                    <div class="form-group">
+                        <label for="editTitle">Title:</label>
+                        <input type="text" id="editTitle" name="editTitle">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Update Category">
+                    </div>
+                </form>
+            </section>    
+        </div>
+    </main>
+
+   
+        
+
+    <script>
+        function deleteCategory(button) 
+        {
+            const row = button.parentElement.parentElement;
+            row.remove();
+        }
+
+        function showSection(section) 
+        {
+            document.querySelectorAll('main section').forEach(sec => sec.style.display = 'none');
+            document.querySelector(`#${section}`).style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>

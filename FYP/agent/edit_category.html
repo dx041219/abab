@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin MainPage</title>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="../css/adminnavstyle.css">
+        <link rel="stylesheet" href="../css/edit_category.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <div class="nav">
+            <div class="sidebar">
+                <a href="adminboard.html"><img src="../image/logo.jpg"></a>
+                <ul>
+                    <li><a href="./A_staff.html"><i class="fas fa-id-card"></i>Dashboard</a></li>
+                    <li><a href="./A_user.html"><i class="fas fa-user"></i>Manage User</a></li>
+                    <li><a href="./A_menu_1.html"><i class="fas fa-pen"></i>Add Post</a></li>
+                    <li><a href="./A_rewards_1.html"><i class="fas fa-file"></i>Manage Post</a></li>
+                    <li><a href="./A_rewards_1.html" style="font-size: 13px;"><i class="fas fa-list"></i>Manage Categories</a></li>
+                    <li><a href="./adminlogin.html"><i class="fas fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Edit Category</h1>
+    
+        <form id="categoryForm" enctype="multipart/form-data">
+
+            <label for="categoryImage">Image:</label>
+            <input type="file" id="categoryImage" name="categoryImage" accept="image/*" required><br><br>
+
+            <label for="categoryTitle">Title:</label>
+            <input type="text" id="categoryTitle" name="categoryTitle" required><br><br>
+            
+            <button type="submit">Edit Category</button>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a 
+{
+    text-decoration: none;
+    color: #333;
+}
+
+.container 
+{
+    display: flex;
+}
+
+aside 
+{
+    width: 200px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.sidebar 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li 
+{
+    margin-bottom: 10px;
+}
+
+.sidebar li a 
+{
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    display: block;
+}
+
+.sidebar li a:hover 
+{
+    background-color: #ddd;
+}
+
+main 
+{
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section 
+{
+    margin-bottom: 20px;
+}
+
+.user-info 
+{
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.activity-summary 
+{
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-filter input 
+{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"]
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] 
+{
+    padding: 10px;
+    background-color: #808B96;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover 
+{
+    background-color: #000000;
+}
+
+.card-body 
+{
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6; 
+    padding: 10px;
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.media 
+{
+    display: flex;
+    align-items: center;
+}
+
+.d-block.ui-w-80 
+{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+}
+
+label.btn-outline-primary 
+{
+    border: 1px solid #007bff; 
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #007bff; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+label.btn-outline-primary:hover 
+{
+    background-color: #007bff;
+    color: #fff; 
+}
+
+input.account-settings-fileinput 
+{
+    display: none; 
+}
+
+.text-light.small.mt-1 
+{
+    color: #666; 
+    font-size: 0.9em;
+}
+
+.image-container 
+{
+    position: relative;
+    display: inline-block;
+    width: 80px; 
+    height: 80px; 
+    margin: 0 auto; 
+}
+
+.image-container img 
+{
+    display: block;
+    width: 100%; 
+    height: 100%;
+    border-radius: 50%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-container .overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+}
+
+.image-container .overlay i 
+{
+    font-size: 24px;
+}
+
+.image-container:hover img 
+{
+    opacity: 0.7;
+    transform: scale(1.1); 
+}
+
+.image-container:hover .overlay 
+{
+    opacity: 1;
+}
+
+#liked-items
+{
+    display: grid;
+}
+
+.liked h2
+{
+    margin-left: 100px;
+}
+
+h2
+{
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cuisine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    justify-items: center;
+    margin:0% 5%;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.food-picture {
+    width: 100%; 
+    height: auto; 
+    cursor: pointer;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+.caption {
+    background-color: #ececec;
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.caption:hover {
+    transform: scale(1.05);
+}
+
+.text-overlay 
+{
+    position: relative;
+    font-size: 24px; 
+    font-weight: bold; 
+    padding: 10px;
+    color: rgb(201, 92, 92);
+}
+
+.search-bar
+{
+    text-align: center;
+}
+
+.search-bar input[type="text"] 
+{
+    padding: 8px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar button 
+{
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.des
+{
+    padding: 0 10px 10px;
+    height: auto;
+}
+
+.comment 
+{
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative; 
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.comment-header 
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 15px; 
+    background-color: #74787c; 
+    color: #fff; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+}
+
+.comment-body 
+{
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.usercomment
+{
+    border: 1px solid black;
+}
+
+.comment-footer 
+{
+    margin-top: 10px;
+}
+
+.comment-footer button 
+{
+    margin-right: 5px;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.usercomment p
+{
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.usercomment h1
+{
+    font-size: 20px;
+}
+
+.comment-footer .edit-btn
+{
+    background-color: orange;
+}
+
+.comment-footer .delete-btn
+{
+    background-color: red;
+}
+
+.comment-footer .view-post-btn
+{
+    background-color: #0056b3;
+}
+
+.comment-footer .edit-btn:hover
+{
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.comment-footer .delete-btn:hover
+{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.comment-footer .view-post-btn:hover
+{
+    background-color: rgba(0, 86, 179, 0.5);
+}
